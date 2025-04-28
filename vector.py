@@ -19,7 +19,7 @@ class Vector:
 
     def __add__(self, other):
         if isinstance(other, Vector):
-            return Vector(self.x + other.x, self.y + other.y)
+            return Vector(self.x + other.x, self.y - other.y)
         else:
             # it doesn't make sense to add anything but two vectors
             print(f"we don't know how to add a {type(other)} to a Vector")
